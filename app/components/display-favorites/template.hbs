@@ -1,0 +1,7 @@
+{{#if favoritesList.items}}
+{{#each favoritesList.items as |cart|}}
+  <p>{{#link-to 'cart' cart.id}}<img src= {{cart.image}} alt= {{cart.name}} class="cart-icon"/>{{/link-to}}{{cart.name}} | {{cart.cuisine}} <span class="glyphicon glyphicon-remove" {{action 'remove' cart}}></span></p>
+{{/each}}
+{{else}}
+<p>There are no food carts in your favorites list yet.</p>
+{{/if}}

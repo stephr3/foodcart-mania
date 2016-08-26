@@ -118,6 +118,10 @@ body {
     height: 300px;
     border-radius: 10px;
   }
+  .glyphicon-heart:hover {
+    font-size: 1.3em;
+    cursor: pointer;
+  }
 }
 
 .comment-display {

@@ -1,8 +1,8 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  favoritesList: Ember.inject.service(),
   ratingAverage: Ember.computed('comments.@each.rating', function(){
-    {{debugger}}
     var total = 0;
     (this.get('comments')).forEach(function(comment){
       total += comment.get('rating');
@@ -12,6 +12,9 @@ export default Ember.Component.extend({
   actions: {
     saveComment(params) {
       this.sendAction('saveComment', params);
+    },
+    addToFavorites(item) {
+      this.get('favoritesList').add(item);
     }
   }
 });
