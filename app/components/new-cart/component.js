@@ -9,8 +9,8 @@ export default Ember.Component.extend({
         image: this.get('image') ? this.get('image'): 'http://foodtruckfiesta.com/wp-content/uploads/2011/07/pure-pasty-cart-s.jpg',
         cuisine: this.get('cuisine'),
         address: this.get('address'),
-        latitude: this.get('latitude'),
-        longitude: this.get('longitude'),
+        latitude: parseInt(this.get('latitude')),
+        longitude: parseInt(this.get('longitude')),
         description: this.get('description')
       };
       this.set('showNewForm', false);
