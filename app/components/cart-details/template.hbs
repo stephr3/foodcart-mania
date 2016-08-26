@@ -13,4 +13,8 @@
 <div class="comment-display">
   {{add-comment cart=cart saveComment="saveComment"}}
   <br>
+  <h3>Comments:</h3>
+  {{#each cart.comments as |comment|}}
+    {{comment-tile comment=comment}}
+  {{/each}}
 </div>
