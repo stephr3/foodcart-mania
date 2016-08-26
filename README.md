@@ -1,7 +1,15 @@
-# Foodcart-mania
+# Food Cart Mania!
+## *By Stephanie Gurung | August 26, 2016*
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+##### *With this application, a user can browse food carts in Portland, rate food carts and leave comments, and see average ratings of food carts.*
+
+## Technologies Used
+
+* EmberJS<br>
+* TypeScript<br>
+* Node JS<br>
+* Bower<br>
+* Bootstrap
 
 ## Prerequisites
 
@@ -15,7 +23,7 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone <https://github.com/stephr3/question-answer.git>`
 * change into the new directory
 * `npm install`
 * `bower install`
@@ -51,3 +59,7 @@ Specify what it takes to deploy your app.
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
 
+###  License
+
+  _This software is licensed under the MIT license._<br><br>
+  Copyright (c) 2016 **Stephanie Gurung**
