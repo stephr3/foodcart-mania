@@ -1,4 +1,5 @@
 <h2><strong>{{cart.name}}</strong></h2>
-<img src= {{cart.image}} alt= {{cart.name}} />
+<div class="image-background"></div>
+{{#link-to 'cart' cart.id}}<img src= {{cart.image}} alt= {{cart.name}} />{{/link-to}}
 <h5>{{cart.cuisine}} | <em>{{cart.description}}</em></h5>
 <h6>{{cart.address}}</h6>
