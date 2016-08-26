@@ -4,7 +4,12 @@ $heading-font: 'Merienda', cursive;
 $content-font: 'Dosis', sans-serif;
 
 $icon-blue: #2E73B4;
+$icon-hover: #3482cb;
+$orange-soda: #F95738;
 
+body {
+  font-family: $content-font;
+}
 .hero-unit {
   background-image: url('http://www.southportlandba.com/wp-content/uploads/2015/08/food-cart.jpg');
   background-size:cover;
@@ -15,7 +20,7 @@ $icon-blue: #2E73B4;
   h1 {
     margin-top: 0;
     color: white;
-    opacity: .9;
+    opacity: .8;
     padding-top: 30px;
     font-size: 5.5em;
   }
@@ -27,9 +32,9 @@ $icon-blue: #2E73B4;
     font-size: 4.5em;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 545px) {
   .hero-unit h1 {
-    font-size: 3.3em;
+    font-size: 4em;
     padding-top: 0;
   }
 }
@@ -43,4 +48,30 @@ $icon-blue: #2E73B4;
 .logo-foodtruck:hover {
   border: 2px solid $icon-blue;
   box-sizing: content-box;
+}
+
+.navbar-custom {
+  background-color: $orange-soda;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: white;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: $icon-blue;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: white;
+}
+
+.btn {
+  background-color: $icon-blue;
+  color: white;
+}
+
+.btn:hover, .btn:focus {
+  background-color: $icon-hover;
+  color: white;
 }

@@ -1,0 +1,45 @@
+{{#if showNewForm}}
+<hr>
+<h3>Add a New Food Cart</h3>
+<form>
+  <div class="form-group">
+    <label for="name">Name</label>
+    {{input value=name id="name" class="form-control"}}
+  </div>
+  <div class="form-group">
+    <label for="image">Image URL</label>
+    {{input value=image id="image" class="form-control"}}
+  </div>
+  <div class="form-group">
+    <label for="cuisine">Cuisine</label>
+    {{#power-select
+      selected=cuisine
+      options=cuisines
+      onchange=(action (mut cuisine))
+      as |item|
+    }}
+    {{item}}
+    {{/power-select}}
+  </div>
+  <div class="form-group">
+    <label for="address">Address</label>
+    {{input value=address id="address" class="form-control"}}
+  </div>
+  <div class="form-group">
+    <label for="latitude">Latitude</label>
+    {{input value=latitude id="latitude" class="form-control"}}
+  </div>
+  <div class="form-group">
+    <label for="longitude">Longitude</label>
+    {{input value=longitude id="longitude" class="form-control"}}
+  </div>
+  <div class="form-group">
+    <label for="description">Description</label>
+    {{input value=description id="description" class="form-control"}}
+  </div>
+  <button class="btn"{{action 'save'}}>Add Food Cart</button>
+</form>
+<br>
+{{else}}
+  <button class="btn" {{action 'showNewForm'}}>Add a New Food Cart</button>
+{{/if}}
