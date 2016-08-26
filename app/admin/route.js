@@ -5,6 +5,7 @@ export default Ember.Route.extend({
     save(params) {
       var newCart = this.store.createRecord('cart', params);
       newCart.save();
+      this.transitionTo('cart', newCart.id);
     }
   }
 });

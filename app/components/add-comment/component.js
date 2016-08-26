@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  ratings: ["*", "**", "***", "****", "*****"],
+  // ratings: ["*", "**", "***", "****", "*****"],
   addNewComment: false,
   actions: {
     addNewComment(){

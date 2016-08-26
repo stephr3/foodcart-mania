@@ -7,15 +7,16 @@
         {{input value=author id="author" class="form-control"}}
       </div>
       <div class="form-group">
-        <label for="rating">Rating</label>
-        {{#power-select
+        <label for="rating">Rating (* to *****)</label>
+        <!-- {{#power-select
           selected=rating
           options=ratings
           onchange=(action (mut rating))
           as |item|
         }}
         {{item}}
-        {{/power-select}}
+        {{/power-select}} -->
+        {{input value=rating id="rating" class="form-control"}}
       </div>
       <div class="form-group">
         <label for="text">Comment</label>
