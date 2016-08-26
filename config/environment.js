@@ -2,6 +2,12 @@
 
 module.exports = function(environment) {
   var ENV = {
+    firebase: {
+      apiKey: "AIzaSyDhTncpGnc0Bhqw_NjC2mIguGigKV_JILM",
+      authDomain: "foodcart-mania.firebaseapp.com",
+      databaseURL: "https://foodcart-mania.firebaseio.com",
+      storageBucket: "foodcart-mania.appspot.com"
+    },
     modulePrefix: 'foodcart-mania',
     environment: environment,
     baseURL: '/',
