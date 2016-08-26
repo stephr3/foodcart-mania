@@ -2,5 +2,12 @@
 <h3>{{star-display ratingAverage}}</h3>
 <div class="image-background"></div>
 {{#link-to 'cart' cart.id}}<img src= {{cart.image}} alt= {{cart.name}} />{{/link-to}}
-<h5>{{cart.cuisine}} | <em>{{cart.description}}</em></h5>
+<h5>
+  {{#if inFavoritesList}}
+    <span class="glyphicon glyphicon-heart clicked" {{action 'removeFromFavorites' cart}}></span>
+  {{else}}
+    <span class="glyphicon glyphicon-heart" {{action 'addToFavorites' cart}}></span>
+  {{/if}}
+  &nbsp;{{cart.cuisine}} | <em>{{cart.description}}</em>
+</h5>
 <h6>{{cart.address}}</h6>
