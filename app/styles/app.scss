@@ -75,3 +75,18 @@ body {
   background-color: $icon-hover;
   color: white;
 }
+
+.cart-tile {
+  max-width: 65%;
+  margin: 20px auto 0;
+  border: solid $icon-blue 5px;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: $orange-soda;
+  color: white;
+  img {
+    width: 100%;
+    border-radius: 10px;
+    height: 275px;
+  }
+}

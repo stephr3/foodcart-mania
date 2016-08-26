@@ -1,1 +1,6 @@
-{{outlet}}
+{{#each model as |cart|}}
+  <div class="cart-tile">
+    {{cart-tile cart=cart}}
+  </div>
+{{/each}}
+<br>
