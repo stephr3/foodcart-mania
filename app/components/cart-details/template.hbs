@@ -15,7 +15,8 @@
         &nbsp;{{cart.cuisine}}
       </h5>
       <h5><em>{{cart.description}}</em></h5>
-      <h5>Map Here</h5>
+      <br>
+      {{google-map cart=cart}}
     </div>
   </div>
   <br>
@@ -27,5 +28,5 @@
     {{#each cart.comments as |comment|}}
     {{comment-tile comment=comment}}
     {{/each}}
-  </div>  
+  </div>
 </div>
