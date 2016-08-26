@@ -1,6 +1,6 @@
 {{#if favoritesList.items}}
 {{#each favoritesList.items as |cart|}}
-  <h3>{{#link-to 'cart' cart.id}}<img src= {{cart.image}} alt= {{cart.name}} class="cart-icon"/>&nbsp;&nbsp;{{cart.name}}{{/link-to}}&nbsp;<span class="glyphicon glyphicon-remove" {{action 'remove' cart}}></span></h3>
+  <h3>{{#link-to 'cart' cart.id}}<img src= {{cart.image}} alt= {{cart.name}} class="cart-icon"/>&nbsp;&nbsp;<span class="link-text">{{cart.name}}</span>{{/link-to}}&nbsp;<span class="glyphicon glyphicon-remove" {{action 'remove' cart}}></span></h3>
 {{/each}}
 {{else}}
 <p>There are no food carts in your favorites list yet.</p>

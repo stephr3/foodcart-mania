@@ -126,9 +126,24 @@ body {
   }
 }
 
+@media screen and (max-width: 995px) {
+  .cart-details h5:first-of-type {
+    margin-top: 1em;
+  }
+}
+
 .comment-display {
   max-width: 75%;
   margin: auto;
+}
+
+.cart-details-full, .administrative-page, .favorites {
+  border: solid $icon-blue 5px;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: $orange-soda;
+  color: white;
+  margin-bottom: 20px;
 }
 
 .administrative-page, .favorites, .cart-details {
@@ -138,11 +153,13 @@ body {
 
 .favorites {
   a {
-    color: black;
+    color: white;
   }
   a:hover {
-    color: $icon-blue;
     text-decoration: none;
+  }
+  span.link-text:hover {
+    color: $icon-blue;
   }
   .cart-icon {
     border-radius: 10px;
@@ -151,7 +168,8 @@ body {
   }
 
   .cart-icon:hover {
-    opacity: .8;
+    border: 2px white solid;
+    border-radius: 10px;
   }
 
   .glyphicon-remove:hover {
