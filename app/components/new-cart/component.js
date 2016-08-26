@@ -2,11 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   cuisines: ['American', 'Asian', 'Latin', 'Middle Eastern', 'European', 'African'],
-  showNewForm: false,
   actions: {
-    showNewForm() {
-      this.set('showNewForm', true);
-    },
     save() {
       var params = {
         name: this.get('name'),
