@@ -1,4 +1,4 @@
-<h2><strong>{{cart.name}}</strong></h2>
+<h2><strong>{{cart.name}}</strong> | {{star-display ratingAverage}}</h2>
 <div class="image-background"></div>
 {{#link-to 'cart' cart.id}}<img src= {{cart.image}} alt= {{cart.name}} />{{/link-to}}
 <h5>{{cart.cuisine}} | <em>{{cart.description}}</em></h5>
