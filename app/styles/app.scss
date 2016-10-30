@@ -5,7 +5,7 @@ $content-font: 'Dosis', sans-serif;
 
 $icon-blue: #2E73B4;
 $icon-hover: #3482cb;
-$orange-soda: #F95738;
+$orange-soda: #843232;
 
 body {
   font-family: $content-font;
@@ -90,7 +90,7 @@ body {
   img, .image-background {
     width: 80%;
     border-radius: 10px;
-    height: 275px;
+    height: 350px;
     display: block;
     margin: auto;
   }
@@ -98,7 +98,7 @@ body {
     background-color: white;
   }
   img {
-    margin-top: -274.5px;
+    margin-top: -350px;
   }
   img:hover {
     background-color: white;
@@ -137,6 +137,24 @@ body {
 @media screen and (max-width: 995px) {
   .cart-details h5:first-of-type {
     margin-top: 1em;
+  }
+}
+@media screen and (max-width: 540px) {
+  .cart-details img {
+    height: 150px;
+  }
+  .cart-details.map-display {
+    width: 100%;
+    height: 150px;
+  }
+  .cart-tile {
+    max-width: 100%;
+  }
+  .cart-tile img, .cart-tile .image-background {
+    height: 150px;
+  }
+  .cart-tile img {
+    margin-top: -150px;
   }
 }
 
