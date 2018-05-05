@@ -1,5 +1,5 @@
 # Food Cart Mania!
-## *By Stephanie Gurung | August 26, 2016*
+## *By Stephanie Roth | August 26, 2016*
 
 ##### *With this application, a user can browse food carts in Portland, rate food carts and leave comments, and see average ratings of food carts.*
 
@@ -62,4 +62,4 @@ Specify what it takes to deploy your app.
 ###  License
 
   _This software is licensed under the MIT license._<br><br>
-  Copyright (c) 2016 **Stephanie Gurung**
+  Copyright (c) 2016 **Stephanie Roth**
